@@ -86,3 +86,7 @@ amount = amount + calculateTax(amount);
 console.log(
   "Your Purchase: " + formatAmount(amount)
 );
+
+if (amount > bank_balance) {
+  console.log("You done spent all your cash dumbass. :(");
+}
